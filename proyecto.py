@@ -21,9 +21,10 @@ print(f'La cantidad de palabras que se usan en este texto son : {len(palabras)} 
 print(f'La primer letra del texto es "{lista[0]}" y "{lista[-1]}" es la ultima')
 
 #4) Palabras invertidas
-print(f'{palabras[::-1]}')
-print(f'{" ".join(lista[::-1])}')
-
+print(f'Tus palabras invertidas son: {palabras[::-1]}')
+print(f'Tu texto invertido es: {"".join(lista[::-1])}')
 
 #5) Existe la palabra Python
-print(f'Existe la palabra "Python": {'Python' in palabras}')
+buscar_python = 'python' in palabras
+dic = {True: 'si', False: 'no'}
+print(f'La palabra "python" {dic[buscar_python]} se encuentra en el texto')
